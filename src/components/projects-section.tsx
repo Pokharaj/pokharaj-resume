@@ -7,7 +7,7 @@ const projects = [
   {
     title: "CAM Archive Logger",
     description: "CAM Archive Logger is a lightweight utility designed to securely store logs from applications that process sensitive data, including Personally Identifiable Information (PII). It helps applications retain logs for up to 30 days in compliance with data protection regulations. Logs can be accessed anytime within this period and are automatically deleted after 30 days. The application supports up to 60,000 transactions per second (TPS), ensuring high performance and reliability.",
-    image: "🔒",
+    image: "project-3d.png",
     technologies: ["Java", "Spring Boot", "AWS Lambda", "AWS Batch", "AWS S3", "KMS", "Firehose", "SQS"],
     github: "https://github.com/pokharaj",
     demo: "https://cam-archive-logger.com",
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Water Loss Management (WLM) System",
     description: "The Water Loss Management System is focused on supporting water utilities in monitoring their infrastructure and optimizing their operations through advanced analytics. It targets the growing challenge of non-revenue water loss - treated drinking water that is lost due to leaks, theft, or other causes. It includes real-time leak detection, identification of pipe network assets at risk of failure, operational simulations, meter data analytics, and water quality monitoring.",
-    image: "💧",
+    image: "project-3d.png",
     technologies: ["Java", "Spring Boot", "MongoDB", "Microservices"],
     github: "https://github.com/pokharaj",
     demo: "https://demo-water-management.com",
@@ -57,7 +57,7 @@ export function ProjectsSection() {
               {/* Project Image/Icon */}
               <div className="relative h-48 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center overflow-hidden">
                 <div className="text-8xl group-hover:scale-110 transition-transform duration-500">
-                  {project.image}
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-card/20 to-transparent" />
               </div>

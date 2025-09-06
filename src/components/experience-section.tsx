@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Building, Calendar, MapPin, ChevronRight } from "lucide-react"
+import { Calendar, MapPin, ChevronRight, BriefcaseBusiness } from "lucide-react"
 
 const experiences = [
   {
@@ -9,8 +9,7 @@ const experiences = [
     company: "Fidelity Investments",
     position: "Lead - Software Engineering",
     duration: "Sep 2022 - Present",
-    location: "Remote",
-    logo: "🏦",
+    location: "Bangalore, India",
     achievements: [
       "Lead Backend Engineer specializing in Java, Spring Boot, and Oracle Database development",
       "Architected and implemented cloud-native solutions using AWS services including Lambda and Batch processing",
@@ -25,8 +24,7 @@ const experiences = [
     company: "Xylem Water Solutions",
     position: "Senior Engineer",
     duration: "Apr 2020 - Sep 2022",
-    location: "Remote",
-    logo: "💧",
+    location: "Bangalore, India",
     achievements: [
       "Led backend development using Java and MongoDB for water loss management system project",
       "Performed comprehensive software development, testing, and debugging processes",
@@ -41,8 +39,7 @@ const experiences = [
     company: "Mindtree Limited",
     position: "Senior Software Engineer",
     duration: "Mar 2019 - Mar 2020",
-    location: "India",
-    logo: "🌳",
+    location: "Bangalore, India",
     achievements: [
       "Developed full-stack applications using Java and Angular frameworks",
       "Implemented responsive web interfaces and backend services",
@@ -58,8 +55,7 @@ const experiences = [
     company: "Chainalytics",
     position: "Junior Software Developer",
     duration: "Mar 2017 - Mar 2019",
-    location: "India",
-    logo: "🔗",
+    location: "Bangalore, India",
     achievements: [
       "Developed full-stack applications using Java, C#, and web technologies",
       "Participated in software development, testing, and debugging processes",
@@ -105,7 +101,7 @@ export function ExperienceSection() {
                       <CardHeader className="w-full">
                         <div className="flex items-start justify-between w-full">
                           <div className="flex items-start gap-4">
-                            <div className="text-4xl">{exp.logo}</div>
+                            <div className="text-4xl"><BriefcaseBusiness /></div>
                             <div className="text-left">
                               <CardTitle className="text-xl mb-1 group-hover:text-primary transition-colors">
                                 {exp.position}
