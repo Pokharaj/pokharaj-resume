@@ -60,8 +60,8 @@ export function ContactSection() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/pokharaj",
-      href: "https://linkedin.com/in/pokharaj"
+      value: "linkedin.com/in/pokharaj-25aa19112/",
+      href: "https://www.linkedin.com/in/pokharaj-25aa19112/"
     },
     {
       icon: Github,
@@ -225,7 +225,7 @@ export function ContactSection() {
                     className="flex-1 bg-gradient-accent hover:shadow-glow transition-all duration-300"
                     asChild
                   >
-                    <a href="https://linkedin.com/in/pokharaj" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/pokharaj-25aa19112/" target="_blank" rel="noopener noreferrer">
                       <Linkedin className="mr-2 h-4 w-4" />
                       Connect
                     </a>

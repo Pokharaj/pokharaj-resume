@@ -10,8 +10,16 @@ export function HeroSection() {
   const handleDownloadResume = () => {
     // Create a temporary link to download resume
     const link = document.createElement('a');
-    link.href = '/resume-pokharaj-patel.pdf'; // You'd place the actual resume PDF in public folder
-    link.download = 'Pokharaj_Patel_Resume.pdf';
+    link.href = '/resume-pokharaj.pdf'; // You'd place the actual resume PDF in public folder
+    link.download = 'Pokharaj_Resume.pdf';
+    link.click();
+  };
+
+  const handleViewProjects = () => {
+    // Create a temporary link to download resume
+    const link = document.createElement('a');
+    link.href = 'https://github.com/Pokharaj'; // You'd place the actual resume PDF in public folder
+    link.target = '_blank';
     link.click();
   };
 
@@ -36,14 +44,14 @@ export function HeroSection() {
           <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-glow ring-2 ring-primary/20 hover:ring-primary/40 transition-all duration-300">
             <img 
               src="/lovable-uploads/17852e0c-4ee8-49df-b9ce-1b066111a64c.png" 
-              alt="Pokharaj Patel - Lead Software Engineer" 
+              alt="Pokharaj - Lead Software Engineer" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           
           {/* Name and Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-            Pokharaj Patel
+            Pokharaj
           </h1>
           <div className="flex items-center justify-center gap-2 mb-6">
             <Badge variant="outline" className="px-4 py-2 text-lg border-primary/30 bg-primary/10">
@@ -69,12 +77,13 @@ export function HeroSection() {
               Download Resume
             </Button>
             <Button 
+              onClick={handleViewProjects}
               variant="outline" 
               size="lg"
               className="border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
             >
               View Projects
-              <ExternalLink className="ml-2 h-5 w-5" />
+              <ExternalLink className="ml-2 h-5 w-5"/>
             </Button>
           </div>
           
@@ -102,7 +111,7 @@ export function HeroSection() {
             </Card>
             
             <Card className="p-4 bg-card/50 backdrop-blur-sm border-primary/20 hover:bg-primary/5 hover:border-primary/40 transition-all duration-300 group cursor-pointer">
-              <a href="https://linkedin.com/in/pokharaj" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2">
+              <a href="https://www.linkedin.com/in/pokharaj-25aa19112/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2">
                 <Linkedin className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                 <span className="text-xs font-medium">LinkedIn</span>
               </a>
