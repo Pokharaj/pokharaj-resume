@@ -5,59 +5,31 @@ import { Github, ExternalLink, Code2 } from "lucide-react"
 
 const projects = [
   {
-    title: "Water Loss Management System",
-    description: "Enterprise-grade application for monitoring and managing water distribution systems with real-time analytics and automated reporting capabilities.",
+    title: "CAM Archive Logger",
+    description: "CAM Archive Logger is a lightweight utility designed to securely store logs from applications that process sensitive data, including Personally Identifiable Information (PII). It helps applications retain logs for up to 30 days in compliance with data protection regulations. Logs can be accessed anytime within this period and are automatically deleted after 30 days. The application supports up to 60,000 transactions per second (TPS), ensuring high performance and reliability.",
+    image: "🔒",
+    technologies: ["Java", "Spring Boot", "AWS Lambda", "AWS Batch", "AWS S3", "KMS", "Firehose", "SQS"],
+    github: "https://github.com/pokharaj",
+    demo: "https://cam-archive-logger.com",
+    highlights: [
+      "Handles up to 60,000 transactions per second",
+      "Secure PII data processing with compliance standards",
+      "Automated 30-day log retention and deletion",
+      "High-performance AWS cloud-native architecture"
+    ]
+  },
+  {
+    title: "Water Loss Management (WLM) System",
+    description: "The Water Loss Management System is focused on supporting water utilities in monitoring their infrastructure and optimizing their operations through advanced analytics. It targets the growing challenge of non-revenue water loss - treated drinking water that is lost due to leaks, theft, or other causes. It includes real-time leak detection, identification of pipe network assets at risk of failure, operational simulations, meter data analytics, and water quality monitoring.",
     image: "💧",
-    technologies: ["Java", "Spring Boot", "Oracle Database", "AWS Lambda", "REST APIs"],
-    github: "https://github.com/pokharaj/water-management",
-    demo: "https://water-management-demo.com",
+    technologies: ["Java", "Spring Boot", "MongoDB", "Microservices"],
+    github: "https://github.com/pokharaj",
+    demo: "https://demo-water-management.com",
     highlights: [
-      "Real-time monitoring of water distribution networks",
-      "Automated leak detection and alerting system",
-      "Performance analytics dashboard",
-      "Scalable microservices architecture"
-    ]
-  },
-  {
-    title: "Bulk Data Processing Engine",
-    description: "High-performance data processing system using Spring Batch for handling large-scale enterprise data migrations and transformations.",
-    image: "⚡",
-    technologies: ["Java", "Spring Batch", "MongoDB", "AWS Batch", "Microservices"],
-    github: "https://github.com/pokharaj/data-processor",
-    demo: "https://data-processor-demo.com",
-    highlights: [
-      "Process millions of records efficiently",
-      "Fault-tolerant batch processing",
-      "Configurable data transformation pipelines",
-      "Real-time processing status monitoring"
-    ]
-  },
-  {
-    title: "Enterprise Web Application",
-    description: "Modern responsive web application built with Angular and Material Design, featuring advanced user management and reporting capabilities.",
-    image: "🌐",
-    technologies: ["Angular", "TypeScript", "Material Design", "REST APIs", "MongoDB"],
-    github: "https://github.com/pokharaj/enterprise-app",
-    demo: "https://enterprise-app-demo.com",
-    highlights: [
-      "Responsive Material Design interface",
-      "Advanced user role management",
-      "Interactive data visualization",
-      "Progressive Web App features"
-    ]
-  },
-  {
-    title: "Microservices Architecture Platform",
-    description: "Scalable microservices platform with service discovery, API gateway, and distributed monitoring for enterprise applications.",
-    image: "🏗️",
-    technologies: ["Java", "Spring Boot", "Kubernetes", "Docker", "AWS"],
-    github: "https://github.com/pokharaj/microservices-platform",
-    demo: "https://microservices-platform-demo.com",
-    highlights: [
-      "Container orchestration with Kubernetes",
-      "Service mesh implementation",
-      "Distributed tracing and monitoring",
-      "Auto-scaling and load balancing"
+      "Real-time leak detection and monitoring",
+      "Advanced analytics for water loss prevention",
+      "Microservices architecture for scalability",
+      "Integration of software and hardware systems"
     ]
   }
 ]

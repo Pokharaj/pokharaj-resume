@@ -9,50 +9,65 @@ const experiences = [
     company: "Fidelity Investments",
     position: "Lead - Software Engineering",
     duration: "Sep 2022 - Present",
-    location: "Bangalore, India",
+    location: "Remote",
     logo: "🏦",
     achievements: [
       "Lead Backend Engineer specializing in Java, Spring Boot, and Oracle Database development",
       "Architected and implemented cloud-native solutions using AWS services including Lambda and Batch processing",
-      "Designed and developed REST APIs for water loss management systems serving enterprise clients",
-      "Optimized database performance through advanced SQL tuning and Oracle-specific optimizations",
-      "Implemented automated testing strategies resulting in 95% code coverage and reduced deployment cycles",
-      "Mentored junior developers and conducted technical interviews for backend engineering positions"
+      "Led software development initiatives with focus on feature development, debugging, testing, and deployment processes",
+      "Mentored development teams and established best practices for enterprise-level applications",
+      "Implemented robust testing strategies and CI/CD pipelines for reliable software delivery"
     ],
-    technologies: ["Java", "Spring Boot", "Oracle Database", "AWS Lambda", "AWS Batch", "REST APIs", "Microservices"]
+    technologies: ["Java", "Spring Boot", "Oracle Database", "AWS", "Lambda", "AWS Batch"]
+  },
+  {
+    id: "xylem",
+    company: "Xylem Water Solutions",
+    position: "Senior Engineer",
+    duration: "Apr 2020 - Sep 2022",
+    location: "Remote",
+    logo: "💧",
+    achievements: [
+      "Led backend development using Java and MongoDB for water loss management system project",
+      "Performed comprehensive software development, testing, and debugging processes",
+      "Collaborated with cross-functional teams to deliver high-quality software solutions",
+      "Mentored junior developers and conducted code reviews to maintain code quality",
+      "Utilized strong analytical and problem-solving skills for system optimization"
+    ],
+    technologies: ["Java", "MongoDB", "Spring Boot", "Hibernate", "Microservices", "REST APIs"]
   },
   {
     id: "mindtree",
     company: "Mindtree Limited",
     position: "Senior Software Engineer",
-    duration: "Aug 2020 - Sep 2022",
-    location: "Bangalore, India", 
+    duration: "Mar 2019 - Mar 2020",
+    location: "India",
     logo: "🌳",
     achievements: [
-      "Developed enterprise-grade applications using Java, Spring Boot, and MongoDB",
-      "Implemented bulk data processing solutions using Spring Batch for high-volume transactions",
-      "Built responsive web applications using Angular with Material Design components",
-      "Collaborated with cross-functional teams to deliver scalable microservices architecture",
-      "Participated in code reviews and maintained high coding standards across the team",
-      "Contributed to technical documentation and knowledge sharing sessions"
+      "Developed full-stack applications using Java and Angular frameworks",
+      "Implemented responsive web interfaces and backend services",
+      "Worked with agile methodologies and participated in sprint planning",
+      "Performed software design, development, testing, and debugging activities",
+      "Collaborated with team members to deliver project milestones on time",
+      "Applied strong knowledge of data structures and databases in development"
     ],
-    technologies: ["Java", "Spring Boot", "Spring Batch", "MongoDB", "Angular", "Material Design", "Microservices"]
+    technologies: ["Java", "Angular", "Spring Framework", "Hibernate", "JavaScript", "HTML/CSS"]
   },
   {
-    id: "ltimindtree",
-    company: "LTIMindtree",
-    position: "Software Engineer",
-    duration: "Feb 2016 - Aug 2020",
-    location: "Bangalore, India",
-    logo: "💼",
+    id: "chainalytics",
+    company: "Chainalytics",
+    position: "Junior Software Developer",
+    duration: "Mar 2017 - Mar 2019",
+    location: "India",
+    logo: "🔗",
     achievements: [
-      "Developed and maintained Java-based enterprise applications for banking and financial services",
-      "Worked extensively with SQL databases for data modeling and query optimization",
-      "Participated in the full software development lifecycle from requirements gathering to deployment",
-      "Implemented automated testing frameworks and CI/CD pipelines",
-      "Collaborated with business analysts to translate requirements into technical solutions"
+      "Developed full-stack applications using Java, C#, and web technologies",
+      "Participated in software development, testing, and debugging processes",
+      "Learned best practices in software design and industry standards",
+      "Contributed to team documentation and knowledge sharing initiatives",
+      "Applied fundamental knowledge of data structures and SQL in development"
     ],
-    technologies: ["Java", "SQL", "Oracle", "Spring Framework", "JUnit", "Maven", "Jenkins"]
+    technologies: ["Java", "C#", "JavaScript", "HTML/CSS", "SQL Server", "JSON"]
   }
 ]
 

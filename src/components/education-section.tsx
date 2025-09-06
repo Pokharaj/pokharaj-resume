@@ -4,17 +4,31 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react"
 
 const education = [
   {
-    institution: "Visvesvaraya Technological University",
-    degree: "Bachelor of Engineering",
-    field: "Computer Science & Engineering",
-    duration: "2012 - 2016",
-    location: "Karnataka, India",
+    institution: "CDAC-ACTS, Bangalore",
+    degree: "P.G. Diploma",
+    field: "Computer Applications and Technology",
+    duration: "2017",
+    location: "Bangalore, India",
     logo: "🎓",
     highlights: [
-      "Strong foundation in Computer Science fundamentals",
-      "Coursework in Data Structures, Algorithms, and Database Systems",
-      "Graduated with expertise in software development principles",
-      "Active participation in technical workshops and coding competitions"
+      "Graduated with 78.20% marks",
+      "Advanced diploma program in computer applications and technology",
+      "Focus on practical software development skills",
+      "Specialized training in enterprise application development"
+    ]
+  },
+  {
+    institution: "CSVTU Bhilai",
+    degree: "B.E. Computer Science",
+    field: "Computer Science & Engineering",
+    duration: "2016",
+    location: "Bhilai, India",
+    logo: "🎓",
+    highlights: [
+      "Graduated with 72.47% marks",
+      "Bachelor of Engineering in Computer Science with focus on software engineering",
+      "Strong foundation in computer systems and programming",
+      "Coursework in Data Structures, Algorithms, and Database Systems"
     ]
   }
 ]
