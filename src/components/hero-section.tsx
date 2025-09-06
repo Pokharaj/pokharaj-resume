@@ -5,6 +5,7 @@ import { Mail, Phone, MapPin, Linkedin, Github, Download, ExternalLink } from "l
 import { ThemeToggle } from "./theme-toggle"
 import heroBackground from "@/assets/hero-bg.jpg"
 
+
 export function HeroSection() {
   const handleDownloadResume = () => {
     // Create a temporary link to download resume
@@ -31,8 +32,14 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="animate-fade-in">
-          {/* Profile Image Placeholder */}
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-accent shadow-glow animate-pulse-glow" />
+          {/* Profile Image */}
+          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-glow ring-2 ring-primary/20 hover:ring-primary/40 transition-all duration-300">
+            <img 
+              src="/lovable-uploads/17852e0c-4ee8-49df-b9ce-1b066111a64c.png" 
+              alt="Pokharaj Patel - Lead Software Engineer" 
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
           
           {/* Name and Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
