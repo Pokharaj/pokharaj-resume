@@ -1,129 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-/* Professional Resume Design System */
 
 @layer base {
   :root {
-    /* Core Colors */
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    /* Modern color palette */
+    --neutral-900: 15 23 42; /* #0F172A - text */
+    --neutral-50: 248 250 252; /* #F8FAFC - bg */
+    --primary: 14 165 164; /* #0EA5A4 - teal */
+    --secondary: 11 95 255; /* #0B5FFF - blue accent */
+    --danger: 225 29 72; /* #E11D48 - error */
     
-    /* Professional Accent Colors */
-    --primary: 210 100% 50%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 210 100% 60%;
+    /* Light theme */
+    --background: var(--neutral-50);
+    --foreground: var(--neutral-900);
+    --card: 255 255 255; /* white */
+    --card-foreground: var(--neutral-900);
+    --popover: 255 255 255;
+    --popover-foreground: var(--neutral-900);
+    --primary-foreground: 255 255 255;
+    --secondary-foreground: 255 255 255;
+    --muted: 241 245 249; /* #F1F5F9 */
+    --muted-foreground: 100 116 139; /* #64748B */
+    --accent: 226 232 240; /* #E2E8F0 */
+    --accent-foreground: var(--neutral-900);
+    --destructive: var(--danger);
+    --destructive-foreground: 255 255 255;
+    --border: 226 232 240; /* #E2E8F0 */
+    --input: 226 232 240;
+    --ring: var(--primary);
+    --radius: 0.5rem;
     
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220.9 39.3% 11%;
+    /* Custom design tokens */
+    --primary-glow: 20 184 166; /* lighter teal */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card) / 0.8), hsl(var(--card) / 0.4));
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
     
-    --accent: 210 40% 98%;
-    --accent-foreground: 210 11% 15%;
-    
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
-    
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 210 100% 50%;
-    --radius: 0.75rem;
-    
-    /* Professional Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(210 100% 95%) 0%, hsl(220 100% 98%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 14% 98%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(210 100% 50%) 0%, hsl(220 100% 60%) 100%);
-    
-    /* Shadows */
-    --shadow-sm: 0 2px 4px hsl(220 13% 91% / 0.3);
-    --shadow-md: 0 4px 12px hsl(220 13% 91% / 0.15);
-    --shadow-lg: 0 8px 24px hsl(220 13% 91% / 0.15);
-    --shadow-glow: 0 0 0 1px hsl(210 100% 50% / 0.2), 0 2px 8px hsl(210 100% 50% / 0.15);
-    
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Spacing system - 8pt baseline */
+    --space-1: 0.5rem; /* 8px */
+    --space-2: 1rem; /* 16px */
+    --space-4: 2rem; /* 32px */
+    --space-8: 4rem; /* 64px */
   }
 
   .dark {
-    /* Dark Theme Core */
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 5% 6%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 5% 6%;
-    --popover-foreground: 0 0% 98%;
+    --background: 15 23 42; /* #0F172A */
+    --foreground: 248 250 252; /* #F8FAFC */
+    --card: 30 41 59; /* #1E293B */
+    --card-foreground: 248 250 252;
+    --popover: 30 41 59;
+    --popover-foreground: 248 250 252;
+    --primary-foreground: 15 23 42;
+    --secondary-foreground: 248 250 252;
+    --muted: 51 65 85; /* #334155 */
+    --muted-foreground: 148 163 184; /* #94A3B8 */
+    --accent: 51 65 85;
+    --accent-foreground: 248 250 252;
+    --destructive: var(--danger);
+    --destructive-foreground: 248 250 252;
+    --border: 51 65 85;
+    --input: 51 65 85;
+    --ring: var(--primary);
     
-    /* Dark Professional Accents */
-    --primary: 200 100% 60%;
-    --primary-foreground: 240 10% 3.9%;
-    --primary-glow: 200 100% 70%;
-    
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 200 100% 60%;
-    
-    /* Dark Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%) 0%, hsl(240 5% 6%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(240 5% 6%) 0%, hsl(240 4% 8%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(200 100% 60%) 0%, hsl(210 100% 70%) 100%);
-    
-    /* Dark Shadows */
-    --shadow-sm: 0 2px 4px hsl(240 10% 3% / 0.8);
-    --shadow-md: 0 4px 12px hsl(240 10% 3% / 0.4);
-    --shadow-lg: 0 8px 24px hsl(240 10% 3% / 0.4);
-    --shadow-glow: 0 0 0 1px hsl(200 100% 60% / 0.3), 0 2px 12px hsl(200 100% 60% / 0.2);
-  }
-  
-  * {
-    @apply border-border;
-  }
-  
-  body {
-    @apply bg-background text-foreground font-['Inter',system-ui,sans-serif];
-    background: var(--gradient-hero);
-  }
-  
-  /* Smooth scrolling */
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    @apply bg-muted;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    @apply bg-primary/60 rounded-full;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-primary;
+    /* Dark theme adjustments */
+    --gradient-card: linear-gradient(135deg, hsl(var(--card) / 0.6), hsl(var(--card) / 0.2));
+    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
   }
 }
 
@@ -131,8 +76,68 @@
   * {
     @apply border-border;
   }
-
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Typography scale */
+  h1 {
+    @apply font-poppins font-bold text-4xl md:text-5xl leading-tight;
+  }
+  
+  h2 {
+    @apply font-poppins font-semibold text-2xl md:text-3xl leading-tight;
+  }
+  
+  h3 {
+    @apply font-poppins font-semibold text-xl md:text-2xl leading-tight;
+  }
+  
+  /* Skip to content link for accessibility */
+  .skip-link {
+    @apply absolute -top-40 left-6 z-[100] px-4 py-2 bg-primary text-primary-foreground rounded-md;
+    @apply focus:top-6 transition-all duration-200;
+  }
+  
+  /* Focus styles for accessibility */
+  .focus-visible:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-elegant hover:-translate-y-1;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-primary text-primary-foreground font-medium px-6 py-3 rounded-lg;
+    @apply hover:shadow-glow transition-all duration-300 hover:-translate-y-0.5;
+    @apply focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+    @apply min-h-[48px] min-w-[48px]; /* Touch target size */
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-primary text-primary font-medium px-6 py-3 rounded-lg;
+    @apply hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:-translate-y-0.5;
+    @apply focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+    @apply min-h-[48px] min-w-[48px]; /* Touch target size */
   }
 }
