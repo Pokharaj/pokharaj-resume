@@ -43,7 +43,7 @@ export function HeroSection() {
           {/* Profile Image */}
           <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-glow ring-2 ring-primary/20 hover:ring-primary/40 transition-all duration-300">
             <img 
-              src="/profile-photo.png" 
+              src="profile-photo.png" 
               alt="Pokharaj - Lead Software Engineer" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />

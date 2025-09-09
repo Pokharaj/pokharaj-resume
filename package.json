@@ -6,8 +6,9 @@
   "homepage": "https://pokharaj.github.io/pokharaj-resume",
   "scripts": {
     "dev": "vite",
+    
     "build": "vite build",
-    "postbuild": "cp dist/index.html dist/404.html",
+    "postbuild": "node scripts/create-404.js",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
