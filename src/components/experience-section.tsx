@@ -121,7 +121,6 @@ export function ExperienceSection() {
                               </div>
                             </div>
                           </div>
-                          <ChevronRight className="h-5 w-5 text-muted-foreground group-data-[state=open]:rotate-90 transition-transform duration-300" />
                         </div>
                       </CardHeader>
                     </AccordionTrigger>
