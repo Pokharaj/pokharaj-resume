@@ -7,7 +7,6 @@ const projects = [
   {
     title: "CAM Archive Logger",
     description: "CAM Archive Logger is a lightweight utility designed to securely store logs from applications that process sensitive data, including Personally Identifiable Information (PII). It helps applications retain logs for up to 30 days in compliance with data protection regulations. Logs can be accessed anytime within this period and are automatically deleted after 30 days. The application supports up to 60,000 transactions per second (TPS), ensuring high performance and reliability.",
-    image: "project-3d.png",
     technologies: ["Java", "Spring Boot", "AWS Lambda", "AWS Batch", "AWS S3", "KMS", "Firehose", "SQS"],
     github: "https://github.com/pokharaj",
     demo: "https://cam-archive-logger.com",
@@ -21,7 +20,6 @@ const projects = [
   {
     title: "Water Loss Management (WLM) System",
     description: "The Water Loss Management System is focused on supporting water utilities in monitoring their infrastructure and optimizing their operations through advanced analytics. It targets the growing challenge of non-revenue water loss - treated drinking water that is lost due to leaks, theft, or other causes. It includes real-time leak detection, identification of pipe network assets at risk of failure, operational simulations, meter data analytics, and water quality monitoring.",
-    image: "project-3d.png",
     technologies: ["Java", "Spring Boot", "MongoDB", "Microservices"],
     github: "https://github.com/pokharaj",
     demo: "https://demo-water-management.com",
@@ -46,22 +44,14 @@ export function ProjectsSection() {
             A showcase of enterprise-grade solutions and innovative applications
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card 
+            <Card
               key={project.title}
               className="group bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-elegant hover:scale-[1.02] animate-scale-in overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Project Image/Icon */}
-              <div className="relative h-48 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center overflow-hidden">
-                <div className="text-8xl group-hover:scale-110 transition-transform duration-500">
-                  <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-card/20 to-transparent" />
-              </div>
-              
               <CardHeader>
                 <CardTitle className="text-xl group-hover:text-primary transition-colors duration-300 flex items-center gap-2">
                   <Code2 className="h-5 w-5" />
@@ -71,7 +61,7 @@ export function ProjectsSection() {
                   {project.description}
                 </CardDescription>
               </CardHeader>
-              
+
               <CardContent className="space-y-4">
                 {/* Key Highlights */}
                 <div>
@@ -85,15 +75,15 @@ export function ProjectsSection() {
                     ))}
                   </ul>
                 </div>
-                
+
                 {/* Technologies */}
                 <div>
                   <h4 className="font-semibold mb-2 text-primary">Technologies</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
-                      <Badge 
+                      <Badge
                         key={tech}
-                        variant="outline" 
+                        variant="outline"
                         className="text-xs border-primary/30 bg-primary/5 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
                       >
                         {tech}
@@ -101,11 +91,11 @@ export function ProjectsSection() {
                     ))}
                   </div>
                 </div>
-                
+
                 {/* Action Buttons */}
                 <div className="flex gap-3 pt-2">
-                  <Button 
-                    size="sm" 
+                  <Button
+                    size="sm"
                     variant="outline"
                     className="flex-1 border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
                     asChild
@@ -115,7 +105,7 @@ export function ProjectsSection() {
                       Code
                     </a>
                   </Button>
-                  <Button 
+                  <Button
                     size="sm"
                     className="flex-1 bg-gradient-accent hover:shadow-glow transition-all duration-300"
                     asChild
